@@ -7,9 +7,11 @@ const port = 3000;
 
 configViewEngine(app);
 
+// định hướng router
 app.get("/", (req, res) => res.render("index.ejs"));
 
 app.get("/about", (req, res) => res.send("I'm Nam"));
+app.get("/home", (req, res) => res.send("I'm Nammmm"));
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
